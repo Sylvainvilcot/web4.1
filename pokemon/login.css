@@ -1,0 +1,79 @@
+@font-face{
+  font-family: "Pokemon";
+  src: url(font/solid-webfont.woff) format("woff"),
+  url(font/solid-webfont.ttf) format("ttf");
+}
+body{
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color:white;
+  background-color: #80C6E8;
+  background-image: url(imgs/trainer.png);
+  background-repeat: no-repeat;
+  background-position: top;
+}
+h2{
+  font-family: 'Pokemon';
+  font-size: 40px;
+  position: relative;
+  top: 100px;
+  right:50px;
+  text-shadow:#0080FF -2px 0, #0080FF 0 2px, #0080FF 2px 0, 0 -2  px #0080FF;
+  color: yellow;
+}
+.barre{
+  width: 100%;
+}
+hr{
+  width: 80%;
+  height: 2px;
+  background-color: black;
+  border: none;
+  margin-bottom: 2px;
+  margin-top: 2px;
+}
+#form{
+  position: relative;
+  top: 80px;
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+  width: 250px;
+  height: 150px;
+  border-radius: 8px;
+}
+#login{
+  position: absolute;
+  right: 12%;
+  top: 25%;
+}
+#mdp{
+  position:absolute;
+  top: 50%;
+  right: 12%;
+}
+#labellog{
+  position: absolute;
+  top: 26%;
+  right: 87%;
+}
+#labelmdp{
+  position: absolute;
+  right: 87%;
+  top: 50%;
+}
+#submit{
+  position: absolute;
+  right: 130px;
+  top:80%;
+}
+.infos{
+  background-color: #80C6E8;
+  border: none;
+  border-bottom: 1px solid black;
+}
+#register{
+  position: absolute;
+  top: 81%;
+  left: 58%;
+}

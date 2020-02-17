@@ -1,0 +1,8 @@
+ordinateur
+capture : pas de combat, systeme de rng pour la capture
+combat dresseurs
+paramètres
+pokedex
+centre pokemon + boutique
+
+Systeme de hover sur les pokeballs pour voir tous les types de balls dispo

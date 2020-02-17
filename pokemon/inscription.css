@@ -1,0 +1,64 @@
+@font-face{
+  font-family: "Pokemon";
+  src: url(font/solid-webfont.woff) format("woff"),
+  url(font/solid-webfont.ttf) format("ttf");
+}
+body{
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color:white;
+  background-color: #F6E652;
+  background-image: url(wallpaper2.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+}
+h2{
+  font-family: 'Pokemon';
+  font-size: 40px;
+  position: absolute;
+  bottom:250px;
+  right: 50px;
+  width: 650px;
+  text-shadow:#0080FF -2px 0, #0080FF 0 2px, #0080FF 2px 0, 0 -2px #0080FF;
+  color: yellow;
+}
+#registration {
+  position: absolute;
+  top: 200px;
+  left: 800px;
+  height: 220px;
+}
+#tab{
+  border-width: 2px;
+  border-color: white;
+  border-style: solid;
+  width: 450px;
+  border-radius:8px;
+  font-size: 18px;
+}
+#submit{
+  position: absolute;
+  bottom: 20px;
+  left: 70px ;
+  border-radius: 10px;
+  font-size: 16px;
+}
+#erreur{
+  position: absolute;
+  left: 70px;
+}
+#erreurdiv{
+  height: 20px;
+}
+#infos{
+  border:none;
+  border-bottom: 1px solid white;
+  background-color:#F6E652;
+}
+#login{
+  position: absolute;
+  left: 200px;
+  bottom: 25px;
+  border-radius: 10px;
+  font-size: 16px;
+}

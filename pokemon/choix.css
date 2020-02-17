@@ -1,0 +1,50 @@
+@font-face{
+  font-family: "Pokemon";
+  src: url(font/solid-webfont.woff) format("woff"),
+  url(font/solid-webfont.ttf) format("ttf");
+}
+body{
+	background-color: #F6E652;
+}
+h2{
+  font-family: 'Pokemon';
+  font-size: 40px;
+  position: absolute;
+  left: 30%;
+  text-shadow:#0080FF -2px 0, #0080FF 0 2px, #0080FF 2px 0, 0 -2px #0080FF;
+  color: yellow;
+}
+#pokeballs{
+	position: absolute;
+	top: 60%;
+	left: 20%;
+}
+.starter{
+	margin: 60px;
+  visibility: hidden;
+}
+#starter{
+	position: absolute;
+	top: 30%;
+	left: 20%;
+}
+
+
+#texte-chen
+{
+  position: absolute;
+	padding: 20px;
+	border: 2px solid black;
+	display: inline-block;
+  top: 20%;
+}
+
+
+.ball{
+	margin: 79px;
+}
+#chen{
+	position: absolute;
+	top: 20%;
+	left: 42.5%;
+}

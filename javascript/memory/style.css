@@ -1,0 +1,6 @@
+img{
+	cursor:pointer;
+}
+	#gagne,#perdu,#temps,.hidden{
+	display : none;
+}

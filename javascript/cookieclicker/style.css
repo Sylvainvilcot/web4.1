@@ -1,0 +1,62 @@
+@import url(https://fonts.googleapis.com/css?family=Kavoon);
+
+body {
+	background-image: url("bg.jpg");
+	background-repeat: repeat;
+	font-family: Kavoon;
+	font-size: 24px;
+	text-align: center;
+	color: white;
+}
+
+.container {
+	max-width: 320px;
+	margin: auto;
+}
+
+h1 {
+	font-size: 28px;
+	background-color: rgba(0, 0, 0, 0.25);
+	padding: 10px 40px 10px 40px;
+	border-radius: 10px;
+}
+
+figure {
+	position: relative;
+	margin: 0;
+}
+
+figure > span {
+	position: absolute;
+	top: 25px;
+	right: 50px;
+	border-radius: 21px;
+	height: 42px;
+	width: 56px;
+	background-color: #f4d03f;
+	box-shadow: 4px 4px 4px black;
+	padding-top: 9px;
+}
+
+button {
+	display: block;
+	width: 100%;
+	font-family: Kavoon;
+	font-size: 24px;
+	background-color: white;
+	padding: 9px;
+	border-radius: 10px;
+	border-width: 0;
+}
+
+p {
+	text-align: left;
+}
+
+img[alt="GrandMa"] {
+	float: left;
+}
+
+.hidden {
+	display: none;
+}

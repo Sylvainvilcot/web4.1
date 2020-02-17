@@ -1,0 +1,367 @@
+@font-face{
+  font-family: "Pokemon";
+  src: url(/font/solid-webfont.woff) format("woff"),
+  url(/font/solid-webfont.ttf) format("ttf");
+}
+body{
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color:white;
+  background: url("imgs/test.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#header{
+  background-color: #0080FF;
+  margin: 0;
+  height: 50px;
+  color: black;
+  font-size: 18px;
+}
+#header h2{
+  height: 0;
+  font-family: 'Pokemon';
+  font-size: 35px;
+  text-align: center;
+  text-shadow:#0080FF -2px 0, #0080FF 0 2px, #0080FF 2px 0, 0 -2px #0080FF;
+  color: yellow;
+  margin: 0;
+  padding: 0;
+}
+#pieces{
+  position: fixed;
+  left: 89%;
+}
+#balls{
+  position: fixed;
+  left: 84%;
+}
+#labelballs{
+  position: fixed;
+  left: 86.5%;
+  margin-right: 50px;
+  margin-top: 19px;
+}
+#labelpieces{
+  position: fixed;
+  left: 92%;
+  margin-right: 60px;
+  margin-top: 19px;
+}
+#retour{
+  float: right;
+  margin-top: 600px;
+  margin-right: 20px;
+  border:none;
+	padding:6px 0 6px 0;
+	border-radius:8px;
+	background:#d34836;
+	font:bold 20px Arial;
+	color:#fff;
+  text-decoration: none;
+  width: 80px;
+  text-align: center;
+}
+.friends a{
+  margin-top: 30px;
+  display: block;
+  transition: 0.3s;
+}
+.show-menu-btn,.hide-menu-btn{
+  transition: 0.3s;
+  font-size: 30px;
+  cursor: pointer;
+}
+.show-menu-btn{
+  position: fixed;
+  left: 96%;
+}
+.show-menu-btn i{
+  line-height:50px;
+  padding-right: 50px;
+}
+.hide-menu-btn{
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+#chk{
+  position: absolute;
+  visibility: hidden;
+}
+#chk:checked ~ .friends{
+  right: 0;
+
+}
+.friends{
+  position: fixed;
+  width: 20%;
+  height: 60%;
+  background: #333;
+  right: -100%;
+  top: 60px;
+  line-height: normal;
+  text-align: center;
+  padding: 80px 0;
+  transition: 0.3s;
+  border-radius: 10px;
+  z-index: 1;
+}
+.friends h3{
+  position: absolute;
+  right: 130px;
+  top: 25px;
+  text-transform: uppercase;
+}
+#submit{
+  position: absolute;
+  visibility: hidden;
+}
+.sub-btn{
+  position: absolute;
+  top: 90%;
+  right: 15%;
+  cursor: pointer;
+}
+#form{
+  position: absolute;
+  top: 90%;
+  right: 25%;
+  background-color: #333;
+  border: none;
+  border-bottom: solid;
+  border-bottom-color: 1px solid black;
+  outline: none;
+}
+.err{
+  position: absolute;
+  font-size: 14px;
+  color: red;
+  top: 92%;
+}
+#fr_req{
+  position: absolute;
+  font-size: 16px;
+  top: 12%;
+  left: 10%;
+}
+#accept{
+  visibility: hidden;
+}
+#deny{
+  visibility: hidden;
+}
+#accept-btn{
+  position: absolute;
+  top: 15%;
+  left: 77%;
+  cursor: pointer;
+  color: green;
+}
+#deny-btn{
+  position: absolute;
+  top: 15%;
+  left: 87%;
+  cursor: pointer;
+  color: red;
+}
+#friendlist{
+  position: absolute;
+  font-size: 16px;
+  top: 25%;
+  left: 20%;
+  height: 60%;
+  width: 60%;
+  overflow: auto;
+}
+.friends h4{
+  position: absolute;
+  left: 98px;
+  top: 100px;
+  text-transform: uppercase;
+}
+#alrdy{
+  position: absolute;
+  font-size: 14px;
+  color: red;
+  top: 84%;
+  left: 5%;
+}
+#disc{
+  position: absolute;
+  visibility: hidden;
+}
+#disc2{
+  position: absolute;
+  top: 2.5%;
+  left: 3%;
+  cursor: pointer;
+  font-size: 25px;
+}
+div.inline{
+	display:inline-block;
+	width:45%;
+	margin:10px 2.5% 10px 2.5%;
+	text-align:center;
+}
+#choix{
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  width: 500px;
+}
+.choix{
+  line-height: 110px;
+  border: none;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 12px;
+  border-style: solid;
+  border-color: black;
+  width: 230px;
+  cursor: pointer;
+}
+.choix:hover{
+  background-color: rgba(89, 89, 89, 0.74);
+}
+#hide-centre{
+  visibility: hidden;
+}
+#hide-centre-btn{
+  font-size: 20px;
+  color: black;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  left: 85%;
+}
+#div_centre{
+  position: absolute;
+  top: 50%;
+  left: 44%;
+  visibility: hidden;
+  background-color: #333;
+  border: solid;
+  border-radius: 10px;
+  height: 150px;
+  width: 150px;
+  border-color: black;
+}
+#soin{
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  text-decoration: none;
+  background-color: #333;
+  border: solid;
+  border-radius: 12px;
+  width: 120px;
+  text-align: center;
+  cursor: pointer;
+}
+#soin:hover{
+  background-color: rgba(145, 145, 145, 0.61);
+}
+#msg_soin{
+  visibility: hidden;
+  color: red;
+  position: absolute;
+  top: 60%;
+  text-align: center;
+}
+#div_shop{
+  visibility: hidden;
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  background-color: #333;
+  border: solid;
+  border-radius: 10px;
+  height: 400px;
+  width: 600px;
+  border-color: black;
+}
+#img-pot{
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  border: solid;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 12px;
+}
+#img-ball{
+  position: absolute;
+  top: 30%;
+  left: 60%;
+  border: solid;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 12px;
+}
+#buy-pot{
+  position: absolute;
+  top: 70%;
+  left: 20%;
+  text-decoration: none;
+  background-color: #333;
+  border: solid;
+  border-radius: 12px;
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+}
+#buy-ball{
+  position: absolute;
+  top: 70%;
+  left: 60%;
+  text-decoration: none;
+  background-color: #333;
+  border: solid;
+  border-radius: 12px;
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+}
+#div_shop h2{
+  font-family: 'Pokemon';
+  text-align: center;
+  text-shadow:#0080FF -2px 0, #0080FF 0 2px, #0080FF 2px 0, 0 -2px #0080FF;
+  color: yellow;
+  font-size: 30px;
+}
+#hide-shop{
+  position: absolute;
+  visibility: hidden;
+}
+#hide-shop-btn{
+  position: absolute;
+  top: 5%;
+  left: 92%;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+}
+.price{
+  position: absolute;
+  color: black;
+  font-size: 22px;
+  top: 55%;
+}
+#price-pot{
+  left:22%;
+}
+#price-ball{
+  left: 62%;
+}
+#label-pot{
+  position: absolute;
+  top: 61.6%;
+  left: 30%;
+}
+#label-ball{
+  position: absolute;
+  top: 61.6%;
+  left: 70%;
+}

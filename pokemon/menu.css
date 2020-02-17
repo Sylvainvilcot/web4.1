@@ -1,0 +1,338 @@
+@font-face{
+  font-family: "Pokemon";
+  src: url(font/solid-webfont.woff) format("woff"),
+  url(font/solid-webfont.ttf) format("ttf");
+}
+body{
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color:white;
+  background: url("imgs/test.jpg");
+  background-repeat: no-repeat;
+  background-size: 135%;
+  background-position: center;
+}
+h2{
+  height: 0;
+  font-family: 'Pokemon';
+  font-size: 35px;
+  text-align: center;
+  text-shadow:#0080FF -2px 0, #0080FF 0 2px, #0080FF 2px 0, 0 -2px #0080FF;
+  color: yellow;
+  margin: 0;
+}
+#pokemons{
+  float: left;
+  margin-top: 8px;
+  border: solid;
+  border-color: black;
+  height: 600px;
+  width: 400px;
+  border-radius: 20px;
+  background-color: rgba(110, 104, 111, 0.71);
+}
+#pokemons h3{
+  padding: 2px;
+  text-align: center;
+  color: black;
+  font-size: 18px;
+  margin: 0;
+  text-transform: uppercase;
+}
+.barre{
+  width: 100%;
+}
+hr{
+  width: 80%;
+  height: 2px;
+  background-color: black;
+  border: none;
+  margin-bottom: 2px;
+  margin-top: 2px;
+}
+.pokemon{
+  height: 90px;
+}
+#menu{
+  margin-left: 20px;
+  margin-top: 8px;
+  display: inline-block;
+  border: solid;
+  height: 600px;
+  width: 1050px;
+  border-color: black;
+  border-radius: 20px;
+  background-color: rgba(110, 104, 111, 0.71);
+}
+#menu h3{
+  padding: 2px;
+  text-align: center;
+  color: black;
+  font-size: 18px;
+  margin: 0;
+  text-transform: uppercase;
+}
+#header{
+  background-color: #0080FF;
+  margin: 0;
+  height: 50px;
+  color: black;
+  font-size: 18px;
+}
+#pieces{
+  position: fixed;
+  left: 89%;
+}
+#balls{
+  position: fixed;
+  left: 84%;
+}
+#labelballs{
+  position: fixed;
+  left: 86.5%;
+  margin-right: 50px;
+  margin-top: 19px;
+}
+#labelpieces{
+  position: fixed;
+  left: 92%;
+  margin-right: 60px;
+  margin-top: 19px;
+}
+#potions{
+  position: fixed;
+  left: 78%;
+}
+#labelpots{
+  position: fixed;
+  left: 80%;
+  margin-top: 12px;
+}
+#places{
+  position: fixed;
+  left: 73%;
+}
+#labelplaces{
+  position: fixed;
+  left: 75%;
+  margin-top: 17px;
+}
+#menu a{
+  line-height: 110px;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 20px;
+  display: inline-block;
+  width: 20%;
+  height: 20%;
+  margin-left:50px;
+  border-radius: 12px;
+  border-style: solid;
+  border-color: black;
+}
+#menu a:hover{
+  border-color: #6f6c6c;
+}
+#ordi{
+  background-color: #e7e7e7;
+  color: black;
+}
+#capt{
+  background-color: #32a151;
+  color: white;
+}
+#combat{
+  background-color: #f44336;
+  color: white;
+}
+#pokedex{
+  background-color: rgb(88, 88, 88);
+  color: white;
+}
+#centre{
+  background-color: rgb(41, 110, 203);
+  color: white;
+}
+#settings{
+  color: white;
+  background-color: rgb(26, 26, 26);
+}
+.inline{
+  margin-top: 17%;
+  margin-bottom: 10%;
+}
+.friends a{
+  margin-top: 30px;
+  display: block;
+  transition: 0.3s;
+}
+.show-menu-btn,.hide-menu-btn{
+  transition: 0.3s;
+  font-size: 30px;
+  cursor: pointer;
+}
+.show-menu-btn{
+  position: fixed;
+  left: 96%;
+}
+.show-menu-btn i{
+  line-height:50px;
+  padding-right: 50px;
+}
+.hide-menu-btn{
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+#chk{
+  position: absolute;
+  visibility: hidden;
+}
+#chk:checked ~ .friends{
+  right: 0;
+
+}
+.friends{
+  position: fixed;
+  width: 20%;
+  height: 60%;
+  background: #333;
+  right: -100%;
+  top: 60px;
+  line-height: normal;
+  text-align: center;
+  padding: 80px 0;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+.friends h3{
+  position: absolute;
+  right: 130px;
+  top: 25px;
+  text-transform: uppercase;
+}
+#submit{
+  position: absolute;
+  visibility: hidden;
+}
+.sub-btn{
+  position: absolute;
+  top: 90%;
+  right: 15%;
+  cursor: pointer;
+}
+#form{
+  position: absolute;
+  top: 90%;
+  right: 25%;
+  background-color: #333;
+  border: none;
+  border-bottom: solid;
+  border-bottom-color: 1px solid black;
+  outline: none;
+}
+.err{
+  position: absolute;
+  font-size: 14px;
+  color: red;
+  top: 92%;
+}
+#fr_req{
+  position: absolute;
+  font-size: 16px;
+  top: 12%;
+  left: 10%;
+}
+#accept{
+  visibility: hidden;
+}
+#deny{
+  visibility: hidden;
+}
+#accept-btn{
+  position: absolute;
+  top: 15%;
+  left: 77%;
+  cursor: pointer;
+  color: green;
+}
+#deny-btn{
+  position: absolute;
+  top: 15%;
+  left: 87%;
+  cursor: pointer;
+  color: red;
+}
+#friendlist{
+  position: absolute;
+  font-size: 16px;
+  top: 25%;
+  left: 20%;
+  height: 60%;
+  width: 60%;
+  overflow: auto;
+}
+.friends h4{
+  position: absolute;
+  left: 98px;
+  top: 100px;
+  text-transform: uppercase;
+}
+#alrdy{
+  position: absolute;
+  font-size: 14px;
+  color: red;
+  top: 84%;
+  left: 5%;
+}
+#disc{
+  position: absolute;
+  visibility: hidden;
+}
+#disc2{
+  position: absolute;
+  top: 2.5%;
+  left: 3%;
+  cursor: pointer;
+  font-size: 25px;
+}
+.n_pok{
+  position:absolute;
+  left: 3%;
+  font-size : 18px;
+}
+.i_pok{
+  position: absolute;
+  left: 10%;
+}
+#n_pok1{
+  top: 17%;
+}
+#n_pok2{
+  top: 30%;
+}
+#n_pok3{
+  top: 43%;
+}
+#n_pok4{
+  top: 56%;
+}
+#n_pok5{
+  top: 69%;
+}
+#n_pok6{
+  top:82%;
+}
+.select{
+  position: absolute;
+  left: 17%;
+  margin-top: 25px;
+}
+.sub{
+  position: absolute;
+  left: 18%;
+  margin-top: 60px;
+}

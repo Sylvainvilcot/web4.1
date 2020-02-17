@@ -1,0 +1,472 @@
+@font-face{
+  font-family: "Pokemon";
+  src: url(/font/solid-webfont.woff) format("woff"),
+  url(/font/solid-webfont.ttf) format("ttf");
+}
+body{
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color:white;
+  background: url("imgs/test.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#header{
+  background-color: #0080FF;
+  margin: 0;
+  height: 50px;
+  color: black;
+  font-size: 18px;
+}
+#header h2{
+  height: 0;
+  font-family: 'Pokemon';
+  font-size: 35px;
+  text-align: center;
+  text-shadow:#0080FF -2px 0, #0080FF 0 2px, #0080FF 2px 0, 0 -2px #0080FF;
+  color: yellow;
+  margin: 0;
+  padding: 0;
+}
+#pieces{
+  position: fixed;
+  left: 89%;
+}
+#balls{
+  position: fixed;
+  left: 84%;
+}
+#labelballs{
+  position: fixed;
+  left: 86.5%;
+  margin-right: 50px;
+  margin-top: 19px;
+}
+#labelpieces{
+  position: fixed;
+  left: 92%;
+  margin-right: 60px;
+  margin-top: 19px;
+}
+#retour{
+  float: right;
+  margin-top: 600px;
+  margin-right: 20px;
+  border:none;
+	padding:6px 0 6px 0;
+	border-radius:8px;
+	background:#d34836;
+	font:bold 20px Arial;
+	color:#fff;
+  text-decoration: none;
+  width: 80px;
+  text-align: center;
+}
+#ordi{
+  margin-top: 20px;
+  color: black;
+  width: 100%;
+  border-style: solid;
+  border-color: black;
+}
+#table{
+  position: absolute;
+  left: 600px;
+  text-align: center;
+  width: 800px;
+  height: 600px;
+  border-style: solid;
+  border-radius: 12px;
+  border-color: black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: rgba(110, 104, 111, 0.71);
+
+}
+
+#pokemons{
+  margin-left: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: solid;
+  border-color: black;
+  height: 600px;
+  width: 400px;
+  border-radius: 20px;
+  background-color: rgba(110, 104, 111, 0.71);
+}
+#pokemons h3{
+  padding: 2px;
+  text-align: center;
+  color: black;
+  font-size: 18px;
+  margin: 0;
+  text-transform: uppercase;
+}
+.barre{
+  width: 100%;
+}
+hr{
+  width: 80%;
+  height: 2px;
+  background-color: black;
+  border: none;
+  margin-bottom: 2px;
+  margin-top: 2px;
+}
+.pokemon{
+  height: 90px;
+}
+.friends a{
+  margin-top: 30px;
+  display: block;
+  transition: 0.3s;
+}
+.show-menu-btn,.hide-menu-btn{
+  transition: 0.3s;
+  font-size: 30px;
+  cursor: pointer;
+}
+.show-menu-btn{
+  position: fixed;
+  left: 96%;
+}
+.show-menu-btn i{
+  line-height:50px;
+  padding-right: 50px;
+}
+.hide-menu-btn{
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+#chk{
+  position: absolute;
+  visibility: hidden;
+}
+#chk:checked ~ .friends{
+  right: 0;
+
+}
+.friends{
+  position: fixed;
+  width: 20%;
+  height: 60%;
+  background: #333;
+  right: -100%;
+  top: 60px;
+  line-height: normal;
+  text-align: center;
+  padding: 80px 0;
+  transition: 0.3s;
+  border-radius: 10px;
+  z-index: 1;
+}
+.friends h3{
+  position: absolute;
+  right: 130px;
+  top: 25px;
+  text-transform: uppercase;
+}
+#submit{
+  position: absolute;
+  visibility: hidden;
+}
+.sub-btn{
+  position: absolute;
+  top: 90%;
+  right: 15%;
+  cursor: pointer;
+}
+#form{
+  position: absolute;
+  top: 90%;
+  right: 25%;
+  background-color: #333;
+  border: none;
+  border-bottom: solid;
+  border-bottom-color: 1px solid black;
+  outline: none;
+}
+.err{
+  position: absolute;
+  font-size: 14px;
+  color: red;
+  top: 92%;
+}
+#fr_req{
+  position: absolute;
+  font-size: 16px;
+  top: 12%;
+  left: 10%;
+}
+#accept{
+  visibility: hidden;
+}
+#deny{
+  visibility: hidden;
+}
+#accept-btn{
+  position: absolute;
+  top: 15%;
+  left: 77%;
+  cursor: pointer;
+  color: green;
+}
+#deny-btn{
+  position: absolute;
+  top: 15%;
+  left: 87%;
+  cursor: pointer;
+  color: red;
+}
+#friendlist{
+  position: absolute;
+  font-size: 16px;
+  top: 25%;
+  left: 20%;
+  height: 60%;
+  width: 60%;
+  overflow: auto;
+}
+.friends h4{
+  position: absolute;
+  left: 98px;
+  top: 100px;
+  text-transform: uppercase;
+}
+#alrdy{
+  position: absolute;
+  font-size: 14px;
+  color: red;
+  top: 84%;
+  left: 5%;
+}
+#disc{
+  position: absolute;
+  visibility: hidden;
+}
+#disc2{
+  position: absolute;
+  top: 2.5%;
+  left: 3%;
+  cursor: pointer;
+  font-size: 25px;
+}
+.n_pok{
+  position:absolute;
+  left: 5%;
+  font-size : 18px;
+}
+.i_pok{
+  position: absolute;
+  left: 10%;
+}
+#n_pok1{
+  top: 21%;
+}
+#n_pok2{
+  top: 32%;
+}
+#n_pok3{
+  top: 45%;
+}
+#n_pok4{
+  top: 58%;
+}
+#n_pok5{
+  top: 71%;
+}
+#n_pok6{
+  top:84%;
+}
+.select{
+  position: absolute;
+  left: 17%;
+  margin-top: 25px;
+}
+.sub{
+  position: absolute;
+  left: 18%;
+  margin-top: 60px;
+}
+.but{
+  border:none;
+	padding:6px 0 6px 0;
+	border-radius:8px;
+	background:#d34836;
+	font:bold 16px Arial;
+	color:#fff;
+  text-decoration: none;
+  width: 100px;
+  text-align: center;
+  position: absolute;
+  left: 30%;
+  cursor: pointer;
+}
+#retirer{
+  top: 60%;
+}
+#deposer{
+  top: 40%;
+}
+#div_deposer{
+  visibility: hidden;
+  position: absolute;
+  top: 20%;
+  left: 29%;
+  border: solid;
+  border-radius: 12px;
+  background-color: #333;
+  width: 150px;
+  height: 200px;
+}
+.poke-btn{
+  text-decoration: none;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+  margin-left: 30px;
+}
+#deposer-hide{
+  position: absolute;
+  visibility: hidden;
+}
+#dep-hide-btn{
+  cursor: pointer;
+  position: absolute;
+  top: 6px;
+  left: 88%;
+}
+#retirer-hide{
+  position: absolute;
+  visibility: hidden;
+}
+#ret-hide-btn{
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 90%;
+  font-size: 20px;
+}
+#div_retirer{
+  visibility: hidden;
+  position: absolute;
+  top:20%;
+  left: 50%;
+  border: solid;
+  border-radius: 12px;
+  background-color: #333;
+  width: 400px;
+  height: 400px;
+  z-index: 2;
+}
+#retir1{
+  position: absolute;
+  left: 10%;
+  top: 30%;
+  text-decoration: none;
+  background-color: #333;
+  border: solid;
+  border-radius: 12px;
+  width: 120px;
+  text-align: center;
+}
+#retir2{
+  position: absolute;
+  left: 55%;
+  top: 30%;
+  text-decoration: none;
+  background-color: #333;
+  border: solid;
+  border-radius: 12px;
+  width: 120px;
+  text-align: center;
+}
+#sub-retir{
+  position: absolute;
+  top: 70%;
+  left: 42%;
+  border: solid;
+  border-radius: 10px;
+  background-color: #333;
+  font-size: 16px;
+  cursor: pointer;
+}
+#retir-1{
+  position: absolute;
+  top: 15%;
+  left: 5%;
+}
+#retir-2{
+  position: absolute;
+  top: 15%;
+  left: 50%;
+}
+#err-cp{
+  color: red;
+  position: absolute;
+  font-size: 14px;
+  background-color: #333;
+  border: solid;
+  border-radius: 10px;
+  border-color: black;
+  top: 50%;
+  left: 30%;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+}
+#abandon{
+  top: 20%;
+}
+#div_abandon{
+  position:absolute;
+  z-index: 3;
+  visibility: hidden;
+  position: absolute;
+  top:20%;
+  left: 50%;
+  border: solid;
+  border-radius: 12px;
+  background-color: #333;
+  width: 200px;
+  height: 200px;
+  z-index: 2;
+}
+#abandon-hide{
+  position: absolute;
+  visibility: hidden;
+}
+#abandon-btn{
+  position: absolute;
+  font-size: 20px;
+  left: 85%;
+  top: 5%;
+  cursor: pointer;
+}
+#s_abandon{
+  position: absolute;
+  left: 20%;
+  top: 10%;
+  text-decoration: none;
+  background-color: #333;
+  border: solid;
+  border-radius: 12px;
+  width: 120px;
+  text-align: center;
+}
+#sub_abandon{
+  position: absolute;
+  top: 70%;
+  left: 14%;
+  border: solid;
+  border-radius: 10px;
+  background-color: #424141;
+  font-size: 12px;
+  cursor: pointer;
+}
